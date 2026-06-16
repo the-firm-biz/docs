@@ -1,0 +1,16 @@
+---
+title: "How is Effective MCap Calculated?"
+---
+
+AutoBoy prices tokens by calculating the _effective market cap_ of a buy.
+
+This is the market cap a user is _effectively_ paying when you account for fees that reduce how many tokens they actually receive - most importantly sniper taxes, but also LP fees.
+
+Here’s an example of a calculation:
+
+- Token A is a Clanker launch with an absolute market cap is \$200k.
+- It’s currently within the _sniper tax period:_ swaps in the next block incur a _50% sniper tax,_ meaning half of the user’s swap goes to sniper fees, not to buying the token. Swaps for this token are effectively paying _twice the price_.
+- AutoBoy therefore calculates the _effective market cap_ as \$400k.
+- Any orders with a max market cap of _\$400k or higher_ are valid and AutoBoy will attempt to execute them.
+
+This calculation is re-run as the effective MCap changes.

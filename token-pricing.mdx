@@ -1,0 +1,10 @@
+---
+title: "How are Token Prices Reevaluated?"
+---
+
+After launch, AutoBoy reevaluates the price of a token by getting the current price of the most liquid Uniswap pool:
+
+1. Every time there is a swap from the Uniswap pool
+2. Every block during fee periods where time is a modifier (i.e. during the Clanker depreciated sniper tax period)
+
+After calculating the current price, if the conditions are met to execute a buy - AutoBoy will execute.
