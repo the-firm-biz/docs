@@ -102,7 +102,7 @@
   "description": "Documentation for AutoBoy by The Firm: the pre-launch order book for tokens on Base, enabling users to line up their buy orders for a token before the token even exists.",
   "background": {
     "color": {
-      "light": "#C8D2C9",
+      "light": "#F3F6F4",
       "dark": "#262E29"
     }
   },
