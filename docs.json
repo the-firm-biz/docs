@@ -3,37 +3,49 @@
   "theme": "aspen",
   "name": "AutoBoy",
   "colors": {
-    "primary": "#15803D",
-    "light": "#22C55e",
-    "dark": "#15803D"
+    "primary": "#0D5133",
+    "light": "#2E9F6E",
+    "dark": "#0D5133"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "pages": [
       "index",
       {
-        "group": "Getting Started",
-        "expanded": true,
+        "group": "For Buyers",
         "pages": [
           "accessing-the-app",
-          "register-a-launch"
+          {
+            "group": "Creating Buy Orders",
+            "pages": [
+              "buylisting",
+              "setting-max-price",
+              "order-validity"
+            ]
+          },
+          "wallets-and-funds"
         ]
       },
       {
-        "group": "Creating Buy Orders",
+        "group": "For Projects",
+        "expanded": true,
         "pages": [
-          "buylisting",
-          "max-price-m-cap",
-          "order-validity"
+          "register-a-launch",
+          "supported-launchpads"
         ]
       },
       {
-        "group": "Token Launches & Auto-Buys",
+        "group": "How Auto-Buys Work",
         "pages": [
-          "token-launch-types",
-          "open-market-buys",
-          "dev-buys",
-          "otc-buys",
+          {
+            "group": "Types of Launch & Auto-buy",
+            "pages": [
+              "token-launch-types",
+              "open-market-buys",
+              "dev-buys",
+              "otc-buys"
+            ]
+          },
           {
             "group": "Order Settlement",
             "pages": [
@@ -45,10 +57,8 @@
         ]
       },
       {
-        "group": "Misc",
+        "group": "Support",
         "pages": [
-          "supported-launchpads",
-          "wallets-and-funds",
           "contact"
         ]
       }
@@ -81,15 +91,18 @@
   "footer": {
     "socials": {
       "x": "https://x.com/TheFirmPressHQ",
-      "github": "https://github.com/mintlify",
+      "github": "https://github.com/the-firm-biz",
       "telegram": "https://t.me/thefirmwelcome"
     }
   },
   "description": "Documentation for AutoBoy by The Firm: the pre-launch order book for tokens on Base, enabling users to line up their buy orders for a token before the token even exists.",
   "background": {
     "color": {
-      "light": "#F3F6F4",
-      "dark": "#141A15"
+      "light": "#C8D2C9",
+      "dark": "#262E29"
     }
+  },
+  "interaction": {
+    "drilldown": true
   }
 }
