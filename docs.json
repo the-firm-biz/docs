@@ -7,7 +7,10 @@
     "light": "#2E9F6E",
     "dark": "#0D5133"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/images/autoboy-social-pfp-200.png",
+    "dark": "/images/autoboy-social-pfp-200.png"
+  },
   "navigation": {
     "pages": [
       "index",
@@ -105,5 +108,9 @@
   },
   "interaction": {
     "drilldown": true
+  },
+  "thumbnails": {
+    "appearance": "dark",
+    "background": "/images/thumbnailbg.png"
   }
 }
