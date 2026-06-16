@@ -69,8 +69,8 @@
     ]
   },
   "logo": {
-    "light": "/images/logo-autoboy-1.png",
-    "dark": "/images/logo-autoboy.png"
+    "light": "/images/logo-autoboy.png",
+    "dark": "/images/logo-autoboy-1.png"
   },
   "navbar": {
     "links": [],
