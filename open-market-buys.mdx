@@ -2,6 +2,22 @@
 title: "Open Market Buys"
 ---
 
-AutoBoy indexes Base in realtime, identifying launches by all supported deployment methods (see [Supported launchpads](/supported-launchpads)).
+The default auto-buy type: AutoBoy executes swaps on behalf of users on the open market.
 
-When AutoBoy’s indexer detects a launch from a deployment address associated with a project, it queries which users have buylisted that project and then executes buys according to their parameters (see [how AutoBoy handles sniper taxes](/effective-mcap) and [how prices are reevaluated](/effective-mcap#when-its-recalculated)).
+<Steps>
+  <Step title="Users create buy orders before the token exists">
+    Buyers [add the project to their buylist](/buylisting), choosing how much to spend and their Max Price (MCap).
+  </Step>
+  <Step title="AutoBoy detects the launch">
+    AutoBoy indexes Base in realtime and spots the launch from the [registered project's](/register-a-launch) deployment address.
+  </Step>
+  <Step title="AutoBoy evaluates the price">
+    It continuously [recalculates the market cap](/mcap-calculation#when-its-recalculated) and compares it against what each buylister is willing to pay.
+  </Step>
+  <Step title="AutoBoy executes the buy">
+    When an order's conditions are met, AutoBoy buys on the user's behalf (see [order prioritization](/order-prioritization)).
+  </Step>
+  <Step title="Tokens land in the user's wallet">
+    The bought tokens sit in the user's [AutoBoy wallet](/wallets-and-funds), to withdraw anytime.
+  </Step>
+</Steps>

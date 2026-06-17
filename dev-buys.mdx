@@ -2,11 +2,24 @@
 title: "Dev Buys (sniper protection)"
 ---
 
-In this launch type, projects use AutoBoy to deploy their token. AutoBoy executes the deployment transaction which includes a dev buy in the same tx. 
+AutoBoy deploys the project's token itself, including a "dev buy" in the same transaction, so every user buys in block zero.
 
 > Every AutoBoy user gets _the same price_, in _block zero —_ before snipers even get a whiff.
 
-USDC is collected to the deployer address prior to deployment, and the dev-bought tokens are redistributed pro-rata to users’ AutoBoy wallets automatically after deployment.
+<Steps>
+  <Step title="Users create buy orders before the token exists">
+    Buyers [add the project to their buylist](/buylisting), choosing how much to spend.
+  </Step>
+  <Step title="AutoBoy collects the committed USDC">
+    Before deployment, the committed USDC is collected to the deployer address.
+  </Step>
+  <Step title="AutoBoy deploys the token with a dev buy">
+    The deployment transaction includes the dev buy, so every order executes in block zero at the same price — before snipers can act.
+  </Step>
+  <Step title="Tokens are distributed to users">
+    AutoBoy redistributes the dev-bought tokens pro-rata to each user's [AutoBoy wallet](/wallets-and-funds), automatically.
+  </Step>
+</Steps>
 
 <Note>
   **Dev Buy projects are curated.**
