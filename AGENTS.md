@@ -22,7 +22,7 @@ Use these canonical terms consistently across every page:
 - **Max Market Cap** — the maximum market cap a buyer is willing to buy at (their order's ceiling). "Max MCap" is acceptable shorthand. Don't use "max price".
 - **effective market cap** — the market cap a buyer effectively pays once sniper tax and LP fees are accounted for. AutoBoy compares a buyer's Max Market Cap against this.
 - **AutoBoy wallet** — the kernel smart wallet (managed by Privy) where buyers deposit USDC and receive purchased tokens.
-- **Open Market**, **Dev Buy**, **OTC** — the three auto-buy types. Capitalize as named types.
+- **Open Market Buy**, **Dev Buy**, **OTC Buy** — the three auto-buy types. Capitalize as named types, "Buy" included.
 - **Verified Launch** — the stamp a project earns once AutoBoy supports its launchpad and knows its deployment address ahead of time.
 - **sniper tax** — a launchpad fee on early swaps that reduces how many tokens a buyer receives.
 - **block zero** — the deployment block; Dev Buys execute here, before snipers.
