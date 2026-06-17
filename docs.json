@@ -54,7 +54,6 @@
             "group": "Order Settlement",
             "pages": [
               "order-prioritization",
-              "token-pricing",
               "effective-mcap"
             ]
           }
