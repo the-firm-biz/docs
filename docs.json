@@ -54,8 +54,7 @@
             "group": "Order Settlement",
             "pages": [
               "order-prioritization",
-              "token-pricing",
-              "effective-mcap"
+              "mcap-calculation"
             ]
           }
         ]
@@ -68,6 +67,16 @@
       }
     ]
   },
+  "redirects": [
+    {
+      "source": "/effective-mcap",
+      "destination": "/mcap-calculation"
+    },
+    {
+      "source": "/token-pricing",
+      "destination": "/mcap-calculation"
+    }
+  ],
   "logo": {
     "light": "/images/logo-autoboy.png",
     "dark": "/images/logo-autoboy-1.png"
