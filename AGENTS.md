@@ -14,8 +14,18 @@
 
 ## Terminology
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+Use these canonical terms consistently across every page:
+
+- **AutoBoy** — one word, capital A and B. The product.
+- **The Firm** — the company behind AutoBoy.
+- **buylist** / **buy order** — lowercase. A buyer adds projects to their buylist, creating a buy order for each.
+- **Max Market Cap** — the maximum market cap a buyer is willing to buy at (their order's ceiling). "Max MCap" is acceptable shorthand. Don't use "max price".
+- **effective market cap** — the market cap a buyer effectively pays once sniper tax and LP fees are accounted for. AutoBoy compares a buyer's Max Market Cap against this.
+- **AutoBoy wallet** — the kernel smart wallet (managed by Privy) where buyers deposit USDC and receive purchased tokens.
+- **Open Market**, **Dev Buy**, **OTC** — the three auto-buy types. Capitalize as named types.
+- **Verified Launch** — the stamp a project earns once AutoBoy supports its launchpad and knows its deployment address ahead of time.
+- **sniper tax** — a launchpad fee on early swaps that reduces how many tokens a buyer receives.
+- **block zero** — the deployment block; Dev Buys execute here, before snipers.
 
 ## Style preferences
 
