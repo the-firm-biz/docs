@@ -22,9 +22,11 @@
             "group": "Creating Buy Orders",
             "pages": [
               "buylisting",
+              "untitled-page",
               "setting-max-price",
               "order-validity"
-            ]
+            ],
+            "expanded": true
           },
           "wallets-and-funds"
         ]
