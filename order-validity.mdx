@@ -1,17 +1,25 @@
 ---
-title: "Order validity"
+title: "Order expiry"
 ---
 
-How long AutoBoy will keep trying to fill an order after the token launches.
+<Tip>
+  Users control how long their AutoBoy orders are valid for once a token launches.
+</Tip>
 
-After this period’s over, the order will be invalidated and AutoBoy will stop trying to buy the token for you.
+Order expiry determines **how long AutoBoy will keep trying to fill an order after the token launches**.
 
-If you set a max order validity period of 4 hours, for example, AutoBoy will monitor the token price and keep reevaluating whether to buy (executing once your buy conditions are met) for up to 4 hours after the launch, then invalidate the order so it doesn’t accidentally auto-buy later.
+If the order's parameters are not met before the expiry time, the order will be invalidated and AutoBoy will stop trying to buy the token for you.
 
-## If your order doesn't fill
+Example: You set an order to expire 4 hours after launch, AutoBoy will monitor the token price and keep reevaluating whether to buy (executing once your buy conditions are met) for up to 4 hours after the launch, then invalidate the order so it doesn’t accidentally auto-buy later.
 
-If the price stays above your [Max Price (MCap)](/setting-max-price) for the whole validity window, the order expires unfilled and AutoBoy stops trying. Your USDC stays in your wallet.
+---
 
-## If the token never launches
+## If your order doesn't fill before the expiry period
 
-Your order just waits — there's no pre-launch expiry, so it stays active until the token launches or you remove the project from your buylist. Your USDC isn't tied up in the meantime.
+If the token's price stays above your [Max Price (MCap)](/setting-max-price) until order expiry, the order expires unfilled and AutoBoy stops trying. Your USDC stays in your wallet.
+
+---
+
+## If the token hasn't launched yet
+
+Your order just waits — there's no pre-launch expiry, so it stays active until the token launches or you remove the project from your buylist.
