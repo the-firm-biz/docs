@@ -26,6 +26,7 @@
                 "group": "Order Parameters",
                 "expanded": true,
                 "pages": [
+                  "untitled-page",
                   "setting-max-price",
                   "order-validity"
                 ]
