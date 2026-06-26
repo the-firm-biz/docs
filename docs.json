@@ -54,11 +54,9 @@
       {
         "group": "Support",
         "pages": ["links", "contact"]
-      }
-    ],
-    "tabs": [
+      },
       {
-        "tab": "API Reference",
+        "group": "API reference",
         "openapi": "https://thefirm.biz/api/public/v1/openapi.json"
       }
     ]
