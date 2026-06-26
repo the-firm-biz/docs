@@ -14,7 +14,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Product",
+        "tab": "Overview",
         "pages": [
           "index",
           {
