@@ -12,48 +12,72 @@
     "dark": "/images/autoboy-social-pfp-200.png"
   },
   "navigation": {
-    "pages": [
-      "index",
+    "tabs": [
       {
-        "group": "For Buyers",
+        "tab": "Product",
         "pages": [
-          "accessing-the-app",
+          "index",
           {
-            "group": "Creating Buy Orders",
+            "group": "For Buyers",
             "pages": [
-              "buylisting",
+              "accessing-the-app",
               {
-                "group": "Order Parameters",
+                "group": "Creating Buy Orders",
                 "expanded": true,
-                "pages": ["untitled-page", "setting-max-price", "order-validity"]
+                "pages": [
+                  "buylisting",
+                  {
+                    "group": "Order Parameters",
+                    "expanded": true,
+                    "pages": [
+                      "untitled-page",
+                      "setting-max-price",
+                      "order-validity"
+                    ]
+                  }
+                ]
+              },
+              "wallets-and-funds"
+            ]
+          },
+          {
+            "group": "For Projects",
+            "expanded": true,
+            "pages": [
+              "why-launch",
+              "register-a-launch",
+              "supported-launchpads"
+            ]
+          },
+          {
+            "group": "How Auto-Buys Work",
+            "pages": [
+              {
+                "group": "Types of Auto-Buy",
+                "pages": [
+                  "token-launch-types",
+                  "open-market-buys",
+                  "dev-buys",
+                  "otc-buys"
+                ]
+              },
+              {
+                "group": "Order Settlement",
+                "pages": [
+                  "order-prioritization",
+                  "mcap-calculation"
+                ]
               }
-            ],
-            "expanded": true
-          },
-          "wallets-and-funds"
-        ]
-      },
-      {
-        "group": "For Projects",
-        "expanded": true,
-        "pages": ["why-launch", "register-a-launch", "supported-launchpads"]
-      },
-      {
-        "group": "How Auto-Buys Work",
-        "pages": [
-          {
-            "group": "Types of Auto-Buy",
-            "pages": ["token-launch-types", "open-market-buys", "dev-buys", "otc-buys"]
+            ]
           },
           {
-            "group": "Order Settlement",
-            "pages": ["order-prioritization", "mcap-calculation"]
+            "group": "Support",
+            "pages": [
+              "links",
+              "contact"
+            ]
           }
         ]
-      },
-      {
-        "group": "Support",
-        "pages": ["links", "contact"]
       }
     ]
   },
