@@ -81,10 +81,7 @@
       },
       {
         "tab": "API Reference",
-        "openapi": "https://thefirm.biz/api/public/v1/openapi.json",
-        "pages": [
-          "test"
-        ]
+        "openapi": "https://thefirm.biz/api/public/v1/openapi.json"
       }
     ]
   },
