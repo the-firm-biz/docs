@@ -25,11 +25,7 @@
               {
                 "group": "Order Parameters",
                 "expanded": true,
-                "pages": [
-                  "untitled-page",
-                  "setting-max-price",
-                  "order-validity"
-                ]
+                "pages": ["untitled-page", "setting-max-price", "order-validity"]
               }
             ],
             "expanded": true
@@ -40,39 +36,28 @@
       {
         "group": "For Projects",
         "expanded": true,
-        "pages": [
-          "why-launch",
-          "register-a-launch",
-          "supported-launchpads"
-        ]
+        "pages": ["why-launch", "register-a-launch", "supported-launchpads"]
       },
       {
         "group": "How Auto-Buys Work",
         "pages": [
           {
             "group": "Types of Auto-Buy",
-            "pages": [
-              "token-launch-types",
-              "open-market-buys",
-              "dev-buys",
-              "otc-buys"
-            ]
+            "pages": ["token-launch-types", "open-market-buys", "dev-buys", "otc-buys"]
           },
           {
             "group": "Order Settlement",
-            "pages": [
-              "order-prioritization",
-              "mcap-calculation"
-            ]
+            "pages": ["order-prioritization", "mcap-calculation"]
           }
         ]
       },
       {
         "group": "Support",
-        "pages": [
-          "links",
-          "contact"
-        ]
+        "pages": ["links", "contact"]
+      },
+      {
+        "tab": "API Reference",
+        "openapi": "https://thefirm.biz/api/public/v1/openapi.json"
       }
     ]
   },
@@ -99,16 +84,7 @@
     }
   },
   "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
+    "options": ["copy", "view", "chatgpt", "claude", "perplexity", "mcp", "cursor", "vscode"]
   },
   "footer": {
     "socials": {
