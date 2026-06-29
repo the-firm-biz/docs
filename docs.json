@@ -23,7 +23,6 @@
               "accessing-the-app",
               {
                 "group": "Creating Buy Orders",
-                "expanded": true,
                 "pages": [
                   "buylisting",
                   {
@@ -68,6 +67,13 @@
                   "mcap-calculation"
                 ]
               }
+            ]
+          },
+          {
+            "group": "REST API",
+            "expanded": true,
+            "pages": [
+              "auto-boy-api"
             ]
           },
           {
