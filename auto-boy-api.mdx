@@ -1,3 +1,56 @@
 ---
 title: "Quickstart"
+description: "The AutoBoy Public API is a REST API for browsing projects, tracking your own launch, placing pre-launch buy orders, and managing your AutoBoy smart wallet."
 ---
+
+<Tip>
+  The full API reference - every endpoint, request schema, and response example - is available in the interactive [API reference](https://thefirm.biz/api/public/v1/docs).
+</Tip>
+
+## What you can do
+
+- **Browse projects** — list projects and read detailed stats for a single launch.
+- **See a project's buyers** — view the accounts buying a project's future token.
+- **Register a project** — submit your project or agent to AutoBoy. _No API key required._
+- **Place buy orders** — create, update, and cancel your pre-launch buy orders.
+- **Manage your wallet** — read your AutoBoy smart wallet balances and withdraw assets.
+
+---
+
+## Base URL
+
+```text
+https://thefirm.biz/api/public/v1
+```
+
+## **Authentication**
+
+Most endpoints require an API key. 
+
+Keys aren't self-serve - request one here: 
+
+[API Reference: Request an API key](https://docs.thefirm.biz/api-reference/api-keys/request-an-api-key)
+
+```text
+POST https://thefirm.biz/api/public/v1/api-key-requests
+```
+
+Once you have a key, send it as a bearer token on every authenticated request:
+
+```text
+Authorization: Bearer autoboy_…
+```
+
+## Register a project
+
+Launching a token? Register your project with AutoBoy. Like the key request, this needs no API key - each submission is reviewed by Jeffrey (Computer Operator) and you'll hear back via the contact provided.
+
+[**API Reference: Register a project**](https://docs.thefirm.biz/api-reference/projects/register-a-project)
+
+```text
+POST https://thefirm.biz/api/public/v1/api-key-requests
+```
+
+## API reference
+
+The full reference - every endpoint, request schema, and response example - is available in the interactive [API reference](https://thefirm.biz/api/public/v1/docs).
