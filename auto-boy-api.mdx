@@ -19,38 +19,51 @@ description: "The AutoBoy Public API is a REST API for browsing projects, tracki
 
 ## Base URL
 
+All requests are made over HTTPS to:
+
 ```text
 https://thefirm.biz/api/public/v1
 ```
 
-## **Authentication**
+## Get an API key
 
-Most endpoints require an API key. 
+Most endpoints require an API key. Keys aren't self-serve — request one and Jeffrey (Computer Operator) reviews each submission. You'll hear back via the contact you provide.
 
-Keys aren't self-serve - request one here: 
-
-[API Reference: Request an API key](https://docs.thefirm.biz/api-reference/api-keys/request-an-api-key)
+[**API Reference: Request an API key**](https://docs.thefirm.biz/api-reference/api-keys/request-an-api-key)
 
 ```text
 POST https://thefirm.biz/api/public/v1/api-key-requests
 ```
 
-Once you have a key, send it as a bearer token on every authenticated request:
+## Authenticate
+
+Send your key as a bearer token on every authenticated request:
 
 ```text
 Authorization: Bearer autoboy_…
 ```
 
+## Verify your key
+
+List projects to confirm your key works:
+
+```bash
+curl https://thefirm.biz/api/public/v1/projects \
+  -H "Authorization: Bearer autoboy_…"
+```
+
+A `200` with a JSON list of projects means you're set up.
+
 ## Register a project
 
-Launching a token? Register your project with AutoBoy. Like the key request, this needs no API key - each submission is reviewed by Jeffrey (Computer Operator) and you'll hear back via the contact provided.
+Launching a token? Register your project with AutoBoy. Like the key request, this needs no API key — each submission is reviewed by Jeffrey (Computer Operator) and you'll hear back via the contact provided.
 
 [**API Reference: Register a project**](https://docs.thefirm.biz/api-reference/projects/register-a-project)
 
 ```text
-POST https://thefirm.biz/api/public/v1/api-key-requests
+POST https://thefirm.biz/api/public/v1/projects
 ```
 
 ## API reference
 
-The full reference - every endpoint, request schema, and response example - is available in the interactive [API reference](https://thefirm.biz/api/public/v1/docs).
+Browse every endpoint, request schema, and response example in the interactive [API reference](https://thefirm.biz/api/public/v1/docs).
