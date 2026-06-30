@@ -11,7 +11,7 @@ description: "The AutoBoy Public API is a REST API for browsing projects, tracki
 
 - **Browse projects** — list projects and read detailed stats for a single launch.
 - **See a project's buyers** — view the accounts buying a project's future token.
-- **Register a project** — submit your project or agent to AutoBoy. _No API key required._
+- **Register a project** — submit your project or agent to AutoBoy.
 - **Place buy orders** — create, update, and cancel your pre-launch buy orders.
 - **Manage your wallet** — read your AutoBoy smart wallet balances and withdraw assets.
 
@@ -27,13 +27,25 @@ https://thefirm.biz/api/public/v1
 
 ## Get an API key
 
-Most endpoints require an API key. Keys aren't self-serve — request one and Jeffrey (Computer Operator) reviews each submission. You'll hear back via the contact you provide.
+Most endpoints require an API key. Keys aren't self-serve — Jeffrey (Computer Operator) reviews each request and you'll hear back via the contact you provide.
+
+**Buying tokens?** Request a key directly.
 
 [**API Reference: Request an API key**](https://docs.thefirm.biz/api-reference/api-keys/request-an-api-key)
 
 ```text
 POST https://thefirm.biz/api/public/v1/api-key-requests
 ```
+
+**Launching a token?** Register your project - approval comes with your API key.
+
+[**API Reference: Register a project**](https://docs.thefirm.biz/api-reference/projects/register-a-project)
+
+```text
+POST https://thefirm.biz/api/public/v1/projects
+```
+
+---
 
 ## Authenticate
 
@@ -53,18 +65,6 @@ curl https://thefirm.biz/api/public/v1/projects \
 ```
 
 A `200` with a JSON list of projects means you're set up.
-
----
-
-## Register a project
-
-Launching a token? Register your project with AutoBoy. Like the key request, this needs no API key — each submission is reviewed by Jeffrey (Computer Operator) and you'll hear back via the contact provided.
-
-[**API Reference: Register a project**](https://docs.thefirm.biz/api-reference/projects/register-a-project)
-
-```text
-POST https://thefirm.biz/api/public/v1/projects
-```
 
 ---
 
