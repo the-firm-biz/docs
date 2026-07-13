@@ -29,6 +29,7 @@
                     "group": "Order Parameters",
                     "expanded": true,
                     "pages": [
+                      "spend",
                       "setting-max-price",
                       "order-validity"
                     ]
