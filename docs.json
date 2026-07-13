@@ -29,7 +29,6 @@
                     "group": "Order Parameters",
                     "expanded": true,
                     "pages": [
-                      "untitled-page",
                       "setting-max-price",
                       "order-validity"
                     ]
@@ -57,7 +56,9 @@
                   "token-launch-types",
                   "open-market-buys",
                   "dev-buys",
-                  "otc-buys"
+                  "otc-buys",
+                  "how-does-auto-boy-work",
+                  "how-fast-is-auto-boy"
                 ]
               },
               {
