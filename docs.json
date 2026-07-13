@@ -50,23 +50,15 @@
           {
             "group": "How it works",
             "pages": [
+              "order-execution",
               "speed",
-              "how-does-auto-boy-work",
               "fees",
+              "mcap-calculation",
               {
-                "group": "Types of Auto-Buy",
+                "group": "Coordinated Buys",
                 "pages": [
-                  "token-launch-types",
-                  "open-market-buys",
                   "dev-buys",
                   "otc-buys"
-                ]
-              },
-              {
-                "group": "Order Settlement",
-                "pages": [
-                  "order-prioritization",
-                  "mcap-calculation"
                 ]
               }
             ]

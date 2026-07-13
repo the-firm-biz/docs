@@ -1,0 +1,36 @@
+---
+title: "Order Execution"
+description: "What happens when a project deploys their token?"
+---
+
+<Steps>
+  <Step title="AutoBoy detects the launch">
+    AutoBoy’s realtime indexer picks up the launch using information the project shared in advance.
+
+    See: [How fast is AutoBoy?](/speed)
+  </Step>
+  <Step title="AutoBoy checks token price">
+    AutoBoy continuously tracks the token’s market cap to see which orders are ready to fill.
+
+    See: [Market Cap Calculation](/mcap-calculation)
+  </Step>
+  <Step title="AutoBoy executes the buy">
+    When an order’s conditions are met, AutoBoy swaps the user’s USDC for the token via its Uniswap pool.
+  </Step>
+  <Step title="Tokens land in the user's wallet">
+    The tokens sit in the user’s AutoBoy wallet, ready to withdraw anytime.
+
+    See: [Wallets & Funds](/wallets-and-funds)
+  </Step>
+</Steps>
+
+---
+
+## Order Prioritization
+
+For auto-buys on the open market, AutoBoy prioritises transaction submission based on the order's parameters:
+
+1. **Market cap descending**: i.e. execution is attempted for orders willing to buy at the highest market cap first (where ‘No limit’ is the highest).
+2. **Spend amount descending**: i.e. bigger orders fill first.
+
+So, somebody who is willing to spend 100 USDC at a 500K MCap will have their buy transaction prioritised over someone who’s willing to spend 200 USDC at a max 100K MCap.
