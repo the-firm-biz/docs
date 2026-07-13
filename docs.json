@@ -48,17 +48,18 @@
             ]
           },
           {
-            "group": "How Auto-Buys Work",
+            "group": "How it works",
             "pages": [
+              "speed",
+              "how-does-auto-boy-work",
+              "fees",
               {
                 "group": "Types of Auto-Buy",
                 "pages": [
                   "token-launch-types",
                   "open-market-buys",
                   "dev-buys",
-                  "otc-buys",
-                  "how-does-auto-boy-work",
-                  "how-fast-is-auto-boy"
+                  "otc-buys"
                 ]
               },
               {
@@ -67,8 +68,7 @@
                   "order-prioritization",
                   "mcap-calculation"
                 ]
-              },
-              "fees"
+              }
             ]
           },
           {
