@@ -22,7 +22,7 @@
             "pages": [
               "accessing-the-app",
               {
-                "group": "Creating Buy Orders",
+                "group": "Buy Orders",
                 "pages": [
                   "orders",
                   {
