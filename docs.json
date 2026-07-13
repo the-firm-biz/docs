@@ -24,7 +24,7 @@
               {
                 "group": "Creating Buy Orders",
                 "pages": [
-                  "buylisting",
+                  "orders",
                   {
                     "group": "Order Parameters",
                     "expanded": true,
@@ -94,6 +94,10 @@
     {
       "source": "/token-pricing",
       "destination": "/mcap-calculation"
+    },
+    {
+      "source": "/buylisting",
+      "destination": "/orders"
     }
   ],
   "logo": {

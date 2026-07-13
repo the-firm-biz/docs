@@ -18,7 +18,7 @@ Use these canonical terms consistently across every page:
 
 - **AutoBoy** — one word, capital A and B. The product.
 - **The Firm** — the company behind AutoBoy.
-- **buylist** / **buy order** — lowercase. A buyer adds projects to their buylist, creating a buy order for each.
+- **order** / **buy order** — lowercase. A buyer places an order for a project; their **orders** are the collection of all their pre-launch buy orders. The old *buylist* / *buylister* / *buylisting* vocabulary is retired — use *orders*, *buyers*, and *placing an order*.
 - **Max Price (MCap)** — the buyer's setting for the highest price, expressed as a market cap, they're willing to buy at (their order's ceiling). "Max MCap" is acceptable shorthand.
 - **effective market cap** — the market cap a buyer effectively pays once sniper tax and LP fees are accounted for. AutoBoy compares a buyer's Max Price (MCap) against this.
 - **AutoBoy wallet** — the kernel smart wallet (managed by Privy) where buyers deposit USDC and receive purchased tokens.
