@@ -20,7 +20,8 @@ Use these canonical terms consistently across every page:
 - **The Firm** — the company behind AutoBoy.
 - **order** / **buy order** — lowercase. A buyer places an order for a project; their **orders** are the collection of all their pre-launch buy orders. The old _buylist_ / _buylister_ / _buylisting_ vocabulary is retired — use _orders_, _buyers_, and _placing an order_.
 - **Max Price (MCap)** — the buyer's setting for the highest price, expressed as a market cap, they're willing to buy at (their order's ceiling). "Max MCap" is acceptable shorthand.
-- **effective market cap** — the market cap a buyer effectively pays once sniper tax and LP fees are accounted for. AutoBoy compares a buyer's Max Price (MCap) against this.
+- **effective market cap** — the market cap a buyer effectively pays once sniper tax and LP fees are accounted for. AutoBoy compares a buyer's Max Price (MCap) against this. Pool fees only — the platform fee is taken after the swap and sits outside this calculation.
+- **platform fee** — AutoBoy's 3% fee, charged on every successful buy and taken in the token bought, after the swap completes. Always _platform fee_ — the old _protocol fee_ vocabulary is retired.
 - **AutoBoy wallet** — the kernel smart wallet (managed by Privy) where buyers deposit USDC and receive purchased tokens.
 - **Open Market Buy**, **Dev Buy**, **OTC Buy** — the three auto-buy types. Capitalize as named types, "Buy" included.
 - **Verified Launch** — the stamp a project earns once AutoBoy supports its launchpad and knows its token creator address ahead of time.
