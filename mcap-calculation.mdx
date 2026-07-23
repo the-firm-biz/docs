@@ -4,7 +4,7 @@ title: "Market Cap calculation"
 
 AutoBoy prices tokens by calculating the _effective market cap_ of a buy.
 
-This is the market cap a user is _effectively_ paying when you account for fees that reduce how many tokens they actually receive - most importantly sniper taxes, but also LP fees.
+This is the market cap a user is _effectively_ paying when you account for pool fees that reduce how many tokens they actually receive - most importantly sniper taxes, but also LP fees.
 
 Here’s an example of a calculation:
 
@@ -12,6 +12,10 @@ Here’s an example of a calculation:
 - It’s currently within the _sniper tax period:_ swaps in the next block incur a _50% sniper tax,_ meaning half of the user’s swap goes to sniper fees, not to buying the token. Swaps for this token are effectively paying _twice the price_.
 - AutoBoy therefore calculates the _effective market cap_ as \$400k.
 - Any orders with a max market cap of _\$400k or higher_ are valid and AutoBoy will attempt to execute them.
+
+<Note>
+  The effective market cap covers pool fees only. The 3% [platform fee](/fees) is taken in the token you bought, after the swap — it's separate from this calculation and from your [Max Price (MCap)](/setting-max-price).
+</Note>
 
 ## When it's recalculated
 
