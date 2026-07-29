@@ -34,14 +34,14 @@ description: "What happens when a project deploys their token?"
 
 AutoBoy can control the order in which it submits transactions to the RPC - but we cannot control the order in which the RPC or L2 sequencers order those transactions.
 
-For auto-buys on the open market, AutoBoy prioritises transaction submission based on the order's parameters:
+For auto-buys on the open market, AutoBoy prioritizes transaction submission based on the order's parameters:
 
 1. **Spend amount descending**: i.e. bigger orders fill first.
 2. **Market cap descending**: i.e. execution is attempted for orders willing to buy at the highest market cap first (where ‘No limit’ is the highest).
 
-Market cap is a tiebreaker when two orders share the same spend amount
+Market cap is a tiebreaker when two orders share the same spend amount.
 
 **Examples:**
 
-- A buy order for 200 USDC will be prioritised over a buy order for 100 USDC.
+- A buy order for 200 USDC will be prioritized over a buy order for 100 USDC.
 - A buy order for 200 USDC with a max 500K MCap will be prioritised over a buy order for 200 USDC with a max 100K MCap.
