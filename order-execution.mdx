@@ -28,9 +28,16 @@ description: "What happens when a project deploys their token?"
 
 ## Order Prioritization
 
+<Warning>
+  AutoBoy always aims to give priority to 'good' holders. Order prioritisation will adapt and is subject to change.
+</Warning>
+
 For auto-buys on the open market, AutoBoy prioritises transaction submission based on the order's parameters:
 
-1. **Market cap descending**: i.e. execution is attempted for orders willing to buy at the highest market cap first (where ‘No limit’ is the highest).
-2. **Spend amount descending**: i.e. bigger orders fill first.
+1. **Spend amount descending**: i.e. bigger orders fill first.
+2. **Market cap descending** (tiebreaker when two orders share the same spend amount): i.e. execution is attempted for orders willing to buy at the highest market cap first (where ‘No limit’ is the highest).
 
-So, somebody who is willing to spend 100 USDC at a 500K MCap will have their buy transaction prioritised over someone who’s willing to spend 200 USDC at a max 100K MCap.
+**Examples:**
+
+- A buy order for 200 USDC will be prioritised over a buy order for 100 USDC.
+- A buy order for 200 USDC with a max 500K MCap will be prioritised over a buy order for 200 USDC with a max 100K MCap.
