@@ -29,19 +29,17 @@ description: "What happens when a project deploys their token?"
 ## Order Prioritization
 
 <Warning>
-  AutoBoy always aims to give priority to 'good' holders. Order submission prioritisation will adapt over time and is subject to change.
+  Order prioritisation will adapt over time and is subject to change.
 </Warning>
 
-AutoBoy can control the order in which it submits transactions to the RPC - but we cannot control the order in which the RPC or L2 sequencers order those transactions.
+AutoBoy prioritizes order submission **based on the overall \$ fee paid by that order.**  **Pay a higher fee = have your order submitted earlier.**
 
-For auto-buys on the open market, AutoBoy prioritizes transaction submission based on the order's parameters:
+If two orders pay the same fee, then the tiebreakers are:
 
-1. **Spend amount descending**: i.e. bigger orders fill first.
-2. **Market cap descending**: i.e. execution is attempted for orders willing to buy at the highest market cap first (where ‘No limit’ is the highest).
-
-Market cap is a tiebreaker when two orders share the same spend amount.
+1. Spend amount descending (i.e. bigger orders fill first) 
+2. Market cap descending (i.e. execution is attempted for orders willing to buy at the highest market cap first (where ‘No limit’ is the highest))
 
 **Examples:**
 
-- A buy order for 200 USDC will be prioritized over a buy order for 100 USDC.
-- A buy order for 200 USDC with a max 500K MCap will be prioritised over a buy order for 200 USDC with a max 100K MCap.
+- A buy order for 200 USDC with a 50% priority fee (\$100 total fee) will have execution attempted before a buy order for 1000 USDC with a 9% priority fee (\$90 total fee)
+- A buy order for 500 USDC with a 40% priority fee (\$200 total fee, higher spend amount) will have execution attempted before a buy order for 400 USDC with a 50% priority fee (\$200 total fee, lower spend amount).
