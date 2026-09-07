@@ -54,6 +54,7 @@
               "order-execution",
               "speed",
               "fees",
+              "vesting",
               "mcap-calculation",
               {
                 "group": "Coordinated Buys",
