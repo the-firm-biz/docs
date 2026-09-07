@@ -29,15 +29,18 @@ description: "What happens when a project deploys their token?"
 ## Order Prioritization
 
 <Warning>
-  Order prioritisation will adapt over time and is subject to change.
+  Order prioritization will adapt over time and is subject to change.
 </Warning>
 
-AutoBoy prioritizes order submission **based on the overall \$ fee paid by that order.**  **Pay a higher fee = have your order submitted earlier.**
+AutoBoy prioritizes order submission **based on the _overall_ \$ fee paid by that order. Pay a higher fee to have your order submitted earlier.**
 
 If two orders pay the same fee, then the tiebreakers are:
 
-1. Spend amount descending (i.e. bigger orders fill first) 
-2. Market cap descending (i.e. the highest market cap orders fill first (where ‘No limit’ is the highest))
+1. **Spend amount descending**: i.e. bigger orders fill first
+2. **Market cap descending:** i.e. the highest market cap orders fill first (where ‘No limit’ is the highest)
+3. **Creation date ascending:** i.e. earliest order fills first.
+
+N.B. [Locking tokens](/locking-tokens) increases the max spendable amount, thereby increasing the overall fee paid. Both locking tokens and priority fee should be considered when aiming to increase prioritization.
 
 **Examples:**
 
