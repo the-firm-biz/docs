@@ -14,11 +14,15 @@ title: "Fees"
   Learn more about [Order Execution & Prioritisation here](https://docs.thefirm.biz/order-execution#order-prioritization)
 </Info>
 
-- **Users may choose to pay a priority fee of up to 50%** to have their order prioritised and executed before others. This optional fee is set when creating or updating your order.
+- **Users may choose to pay a priority fee of up to 50%** to have their order prioritised and executed before others. This _optional_ fee is set when creating or updating your order.
 
-- This fee is only taken when AutoBoy successfully fills your order in the correct position according to the Order Execution priority logic described [here](https://docs.thefirm.biz/order-execution#order-prioritization) (i.e. if there is an error on-chain and your order is filled late - we don't take the fee).
+- This fee is only taken when AutoBoy successfully fills your order in the correct position according to the Order Execution priority logic described [here](https://docs.thefirm.biz/order-execution#order-prioritization) (i.e. if there is an error on-chain and your order is filled late, we don't take the fee).
 
 - The priority fee is taken _after_ the swap, so it isn't part of the [effective market cap](/mcap-calculation) AutoBoy evaluates your order against.
+
+<Frame caption="How your priority fee is used">
+  ![Prio Fee Distribution](/images/prio-fee-distribution.png "Prio Fee Distribution")
+</Frame>
 
 ## Gas Fee
 
